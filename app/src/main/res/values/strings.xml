@@ -1,3 +1,82 @@
 <resources>
     <string name="app_name">wansati</string>
+    <string name="skip">Skip</string>
+    <string name="logo_description">App logo</string>
+    <string name="search_button_description">Search</string>
+    <string name="profile_button_description">Profile</string>
+    <string name="job_board">Jobs</string>
+    <string name="onboarding_image_description">Colorful backdrop</string>
+    <string name="salary_calculation">Salary Calculation Icon</string>
+    <string name="login">Login</string>
+    <string name="forum">Forum</string>
+    <string name="home">Home icon</string>
+    <string name="authentication_screen">Authentication Screen</string>
+    <string name="signup">Sign Up</string>
+    <string name="facebook_signIn">Continue with Facebook</string>
+    <string name="google_signIn">Continue with Google</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="has_account"><u>Already have an account?</u></string>
+    <string name="email">Email</string>
+    <string name="authenticate">Sign In</string>
+    <string name="filter">Filter</string>
+    <string name="jobs">Jobs</string>
+    <string name="messages">Messages</string>
+    <string name="home_text">Home</string>
+    <string name="estimation">Estimation</string>
+    <string name="next">Next</string>
+    <string name="onboarding_text1">Our AI-driven mentor suggestions will help you connect with experienced women who can guide you in your field. Build meaningful relationships and gain insights to help you thrive in your career!</string>
+    <string name="backdrop_description">image backdrop</string>
+    <string name="placeholder">placeholder</string>
+    <string name="placeholder_text">Loading brilliance, one profile at a time… ✨</string>
+    <string name="back">Back</string>
+    <string name="onboarding_text2">Let’s get started on your journey! Complete your profile, set your goals, and begin connecting with mentors and community members. Your path to empowerment starts here!</string>
+    <string name="dots_description">Status dots</string>
+    <string name="edit_profile_picture">Edit profile picture button</string>
+    <string name="onboarding_text0">Join a vibrant community of women empowering each other in their careers. Whether you’re seeking guidance, sharing experiences, or exploring workplace insights, you’re in the right place!</string>
+    <!-- Profile Picture -->
+    <string name="profile_picture">Profile Picture</string>
+
+    <!-- Labels -->
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="location">Location</string>
+    <string name="work_experience">Work Experience</string>
+    <string name="education">Education</string>
+    <string name="certifications">Certifications</string>
+    <string name="interests">Interests</string>
+    <string name="hobbies">Hobbies</string>
+    <string name="career_aspirations">Career Aspirations</string>
+    <string name="bio_intro">Bio/Intro</string>
+
+    <!-- Hints -->
+    <string name="name_hint">Enter your name</string>
+    <string name="age_hint">Enter your age</string>
+    <string name="location_hint">Enter your location</string>
+    <string name="work_experience_hint">Describe your work experience</string>
+    <string name="education_hint">Enter your education details</string>
+    <string name="certifications_hint">Enter your certifications</string>
+    <string name="interests_hint">Enter your interests</string>
+    <string name="hobbies_hint">Enter your hobbies</string>
+    <string name="career_aspirations_hint">Describe your career aspirations</string>
+    <string name="bio_intro_hint">Write a brief bio/introduction</string>
+    <string name="back_button">Back</string>
+
+    <string name="edit_profile">Edit Profile</string>
+
+
+
+
+
+
+    <!-- Button Text -->
+    <string name="save_profile">Save Profile</string>
+    <string name="birthday">Birthday</string>
+    <string name="birthday_hint">Select your birthday</string>
+    <string name="select_location">Select Location</string>
+
+    <string name="add_work_experience">Add Work Experience</string>
+
+    <string name="add_certification">Add Certification</string>
+
+    <string name="add_education">Add Education</string>
 </resources>

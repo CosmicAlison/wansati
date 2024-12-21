@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <!-- Frame layout to layer the onboarding image over a background -->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/splashFrame"
+        android:layout_marginTop="10dp">
+
+
+        <ImageView
+            android:id="@+id/onboardingImage"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:contentDescription="@string/onboarding_image_description"
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/blob1" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/logo_description"
+            android:src="@drawable/logo" />
+
+
+    </FrameLayout>
+
+       <!-- Loading wheel at the bottom -->
+    <ProgressBar
+        android:id="@+id/loadingWheel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splashFrame"
+        android:layout_gravity="center"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="80dp"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

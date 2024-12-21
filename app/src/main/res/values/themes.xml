@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.Wansati" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.Wansati" parent="Theme.AppCompat.Light.NoActionBar"></style>
+
+    <style name="SplashTheme" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@android:color/white</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_logo</item>
+        <item name="windowSplashScreenAnimationDuration">3000</item>
+        <item name="postSplashScreenTheme">@style/Theme.Wansati</item>
+    </style>
+
+        <style name="HomeButtonStyle">
+            <item name="android:background">@drawable/square_rounded_button_fill</item>
+        </style>
+
+
 </resources>

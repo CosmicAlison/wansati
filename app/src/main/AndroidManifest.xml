@@ -16,13 +16,56 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Wansati">
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".AuthenticationActivity"
+            android:label="@string/authentication_screen"
+            android:theme="@style/Theme.Wansati"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".OnboardingScreen"
+            android:label="@string/authentication_screen"
+            android:theme="@style/Theme.Wansati"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".OnboardingScreen1"
+            android:label="@string/authentication_screen"
+            android:theme="@style/Theme.Wansati"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".OnboardingScreen2"
+            android:label="@string/authentication_screen"
+            android:theme="@style/Theme.Wansati"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ProfileActivity"
+            android:label="@string/authentication_screen"
+            android:theme="@style/Theme.Wansati"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/authentication_screen"
+            android:theme="@style/Theme.Wansati"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:windowSoftInputMode="adjustResize" />
+
     </application>
 
 </manifest>
