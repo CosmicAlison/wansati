@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JobBoardFragment">
+
+    <!-- Solid Colored Section at the Top with Image and Text -->
+    <LinearLayout
+        android:id="@+id/topSection"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_corner_pink"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Image at the Top -->
+        <ImageView
+            android:id="@+id/topImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/onboarding_image1"
+            android:contentDescription="Image promoting workplace rating" />
+
+        <!-- Text Prompt -->
+        <TextView
+            android:id="@+id/ratingPromptText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Help other women in your area by rating your current workplace!"
+            android:textSize="14sp"
+            android:textColor="@color/theme_purple"
+            android:layout_marginTop="65dp"
+            android:layout_marginStart="15dp"
+            android:gravity="left" />
+    </LinearLayout>
+
+    <!-- Search Bar Section with Rounded Corners -->
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/searchEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Search for jobs"
+        android:padding="16dp"
+        android:background="@drawable/rounded_corner" 
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/topSection"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Scrollable Section with Jobs -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/jobBoardRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/searchEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_corner" />
+</androidx.constraintlayout.widget.ConstraintLayout>

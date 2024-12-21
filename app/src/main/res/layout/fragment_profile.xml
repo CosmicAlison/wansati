@@ -1,0 +1,211 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    android:padding="16dp">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/back_button"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="start" />
+
+    <!-- Scrollable Form with White Background -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_background"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Profile Picture and Edit Icon -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/profilePicture"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_profile"
+                    android:contentDescription="@string/profile_picture"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/ic_profile" />
+
+                <ImageButton
+                    android:id="@+id/editProfilePictureButton"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_edit_profile"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/edit_profile_picture"
+                    android:layout_alignBottom="@id/profilePicture"
+                    android:layout_alignEnd="@id/profilePicture"
+                    android:layout_margin="4dp" />
+            </RelativeLayout>
+
+            <!-- Name -->
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:background="@drawable/rounded_edittext"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Bio -->
+            <EditText
+                android:id="@+id/bioIntroEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bio"
+                android:background="@drawable/rounded_edittext"
+                android:layout_marginBottom="8dp" />
+
+
+            <!-- Birthday -->
+            <EditText
+                android:id="@+id/birthdayEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Birthday"
+                android:background="@drawable/rounded_edittext"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Location -->
+            <Button
+                android:id="@+id/selectLocationButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Location"
+                android:background="@drawable/thick_rounded_button_fill"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/locationLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Current Job Details -->
+            <TextView
+                android:id="@+id/jobDetailsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Job Details"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/currentJobTitleEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Job Title"
+                android:background="@drawable/rounded_edittext"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/currentJobDurationEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Job Duration"
+                android:background="@drawable/rounded_edittext"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/industryEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Industry"
+                android:background="@drawable/rounded_edittext"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Last Qualification -->
+            <TextView
+                android:id="@+id/qualificationLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Qualification"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/lastQualificationEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Qualification Title"
+                android:background="@drawable/rounded_edittext"
+                android:layout_marginBottom="16dp" />
+                
+
+            <!-- Certifications Section -->
+            <TextView
+                android:id="@+id/certificationsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Certifications"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Placeholder for Certifications -->
+                <TextView
+                    android:id="@+id/noCertificationsLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No certifications added yet."
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Add Certification Button -->
+                <Button
+                    android:id="@+id/addCertificationsButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Certification"
+                    android:background="@drawable/thick_rounded_button_fill"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="16dp" />
+            </LinearLayout>
+
+
+
+            <!-- Save Button -->
+            <Button
+                android:id="@+id/saveProfileButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Profile"
+                android:background="@drawable/thick_rounded_button_fill"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="56dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

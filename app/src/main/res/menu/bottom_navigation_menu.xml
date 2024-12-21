@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <item
+        android:id="@+id/navigation_job_board"
+        android:icon="@drawable/ic_briefcase"
+        android:title="@string/jobs"
+        android:layout_marginEnd="25dp"
+        app:itemIconTint="@android:color/black"
+        />
+    <item
+        android:id="@+id/navigation_salary_calculation"
+        android:icon="@drawable/ic_salary_calculation"
+        android:title="@string/estimation"
+        android:layout_marginEnd="2dp"
+        app:itemIconTint="@android:color/black" />
+        
+    <item
+    android:id="@+id/navigation_home"
+    android:icon="@drawable/ic_home"
+    android:title="@string/home_text"
+    android:layout_marginHorizontal="16dp"
+    app:itemIconTint="@android:color/white"/>
+
+    <item
+        android:id="@+id/navigation_forum"
+        android:icon="@drawable/ic_forum"
+        android:title="@string/forum"
+        android:layout_marginEnd="25dp"
+        app:itemIconTint="@android:color/black"
+         />
+    <item
+        android:id="@+id/navigation_messages"
+        android:icon="@drawable/ic_message"
+        android:title="@string/messages"
+        android:layout_marginEnd="15dp"
+        app:itemIconTint="@android:color/black" />
+</menu>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title for Salary Prediction -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salary Prediction"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp" />
+
+        <!-- Input for Job Title -->
+        <EditText
+            android:id="@+id/jobTitleInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter job title"
+            android:inputType="text"
+            android:padding="8dp"
+            android:background="@drawable/rounded_edittext_background" />
+
+        <!-- Input for Years of Experience -->
+        <EditText
+            android:id="@+id/experienceInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter years of experience"
+            android:inputType="numberDecimal"
+            android:padding="8dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:layout_marginTop="16dp" />
+
+        <!-- Dropdown for Education Level -->
+        <Spinner
+            android:id="@+id/educationSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:padding="8dp" />
+
+        <!-- Input for Skills or Certifications -->
+        <EditText
+            android:id="@+id/skillsInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter relevant skills or certifications"
+            android:inputType="text"
+            android:padding="8dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:layout_marginTop="16dp" />
+
+        <!-- Predict Button -->
+        <Button
+            android:id="@+id/predictButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Predict Salary"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:padding="12dp" />
+
+        <!-- Display Predicted Salary -->
+        <TextView
+            android:id="@+id/predictedSalaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Predicted Salary Range: "
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="24dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,21 @@
+<!-- res/drawable/splash_icon.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background image or additional image behind the logo -->
+    <item>
+        <bitmap
+            android:src="@drawable/blob1"
+            android:gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="300dp"/>
+    </item>
+
+    <!-- Main logo on top of the background -->
+    <item>
+        <bitmap
+            android:src="@drawable/logo"
+            android:gravity="center"
+            android:layout_width="220dp"
+            android:layout_height="220dp"/>
+    </item>
+</layer-list>
+
