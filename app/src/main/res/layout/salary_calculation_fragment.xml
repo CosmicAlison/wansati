@@ -76,17 +76,6 @@
             android:background="@drawable/rounded_edittext_background"
             android:layout_marginTop="16dp" />
 
-        <!-- Input for Skills or Certifications -->
-        <EditText
-            android:id="@+id/skillsInput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter relevant skills or certifications"
-            android:inputType="text"
-            android:padding="8dp"
-            android:background="@drawable/rounded_edittext_background"
-            android:layout_marginTop="16dp" />
-
         <!-- Predict Button -->
         <Button
             android:id="@+id/predictButton"
