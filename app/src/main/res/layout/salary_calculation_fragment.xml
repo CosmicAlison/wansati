@@ -3,25 +3,28 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@drawable/abstract_bg">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingTop="30dp">
 
-        <!-- Title for Salary Prediction -->
+
+        <!-- Input for Job Title -->
         <TextView
             android:id="@+id/titleText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Salary Prediction"
-            android:textSize="20sp"
-            android:textStyle="bold"
             android:layout_gravity="center_horizontal"
-            android:paddingBottom="16dp" />
+            android:paddingBottom="16dp"
+            android:text="Our algorithm can provide an accurate estimate of potential earnings in your field. Just enter your details to get started!"
+            android:textColor="@color/theme_purple"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
-        <!-- Input for Job Title -->
         <EditText
             android:id="@+id/jobTitleInput"
             android:layout_width="match_parent"
@@ -42,6 +45,17 @@
             android:background="@drawable/rounded_edittext_background"
             android:layout_marginTop="16dp" />
 
+        <TextView 
+            android:id="@+id/educationText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select your highest attained degree:"
+            android:textSize="14sp"
+            android:textColor="@color/theme_purple"
+            android:padding="8dp"
+            android:layout_marginTop="16dp" 
+        />
+
         <!-- Dropdown for Education Level -->
         <Spinner
             android:id="@+id/educationSpinner"
@@ -50,6 +64,17 @@
             android:layout_marginTop="16dp"
             android:background="@drawable/rounded_edittext_background"
             android:padding="8dp" />
+
+        <!-- Input for education title -->
+        <EditText
+            android:id="@+id/educationTitleInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the title or field of your degree"
+            android:inputType="text"
+            android:padding="8dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:layout_marginTop="16dp" />
 
         <!-- Input for Skills or Certifications -->
         <EditText
@@ -65,11 +90,12 @@
         <!-- Predict Button -->
         <Button
             android:id="@+id/predictButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Predict Salary"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="Get Estimates"
+            android:background="@drawable/thick_rounded_button_fill"
             android:layout_marginTop="24dp"
-            android:backgroundTint="#6200EE"
+            android:layout_marginLeft="30dp"
             android:textColor="#FFFFFF"
             android:padding="12dp" />
 
