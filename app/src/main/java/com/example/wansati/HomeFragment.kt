@@ -23,7 +23,6 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
         val profileButton: ImageButton = view.findViewById(R.id.profileButton)
@@ -32,7 +31,6 @@ class HomeFragment : Fragment() {
             startActivity(intent)
         }
 
-        // Filter Button setup
         val filterButton: Button = view.findViewById(R.id.filterButton)
         filterButton.setOnClickListener {
         }
@@ -43,7 +41,6 @@ class HomeFragment : Fragment() {
 
         val searchButton: ImageButton = view.findViewById(R.id.searchButton)
         searchButton.setOnClickListener {
-            // Handle search button click, e.g., navigate to search page
         }
 
         return view

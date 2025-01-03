@@ -13,14 +13,11 @@ class OnboardingScreen2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.onboarding_screen_2)  // Use the appropriate layout
 
-        // Initialize the buttons and text
         val nextButton: Button = findViewById<Button>(R.id.nextButton)
         val skipButton: Button = findViewById<Button>(R.id.skipButton)
 
-        // Set onClick listeners for the buttons
         nextButton.setOnClickListener {
-            // Navigate to AuthenticationActivity with "Sign In" active
-            val intent = Intent(this, AuthenticationActivity::class.java).apply {
+              val intent = Intent(this, AuthenticationActivity::class.java).apply {
                 putExtra("auth_mode", "log_in")
             }
             startActivity(intent)

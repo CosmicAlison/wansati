@@ -22,7 +22,6 @@ class JobBoardFragment : Fragment() {
     private lateinit var imageView: ImageView
     private lateinit var textView: TextView
 
-    // Sample job list for demonstration
     private val jobList = listOf(
         Job("Software Developer", "Tech Company", "New York", 4.5, "Help build innovative tech solutions"),
         Job("Data Analyst", "Finance Corp", "San Francisco", 4.2, "Analyze financial trends"),
@@ -33,7 +32,6 @@ class JobBoardFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Initialize binding
         binding = FragmentJobBoardBinding.inflate(inflater, container, false)
 
         // Initialize UI components
@@ -47,14 +45,11 @@ class JobBoardFragment : Fragment() {
         jobsRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         jobsRecyclerView.adapter = jobAdapter
 
-        // Set up the search functionality
         searchEditText.setOnEditorActionListener { _, _, _ ->
             filterJobs(searchEditText.text.toString())
             true
         }
 
-        // Handle the "Help other women" section
-        //imageView.setImageResource(R.drawable.ic_help)
         textView.text = "Help other women in your area by rating your current workplace"
 
         return binding.root

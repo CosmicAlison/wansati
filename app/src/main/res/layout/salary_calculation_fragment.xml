@@ -4,14 +4,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    android:background="@drawable/abstract_bg">
+    >
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingTop="30dp">
+        android:paddingTop="10dp">
 
+        <ImageView
+            android:id="@+id/logoSalaryCalc"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:src="@drawable/ic_splash_logo"
+            android:layout_marginTop="-11dp"
+            android:layout_marginLeft="128dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/logo_description" />
 
         <!-- Input for Job Title -->
         <TextView
@@ -79,13 +90,13 @@
         <!-- Predict Button -->
         <Button
             android:id="@+id/predictButton"
-            android:layout_width="300dp"
-            android:layout_height="60dp"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
             android:text="Get Estimates"
-            android:background="@drawable/thick_rounded_button_fill"
+            android:background="@drawable/rounded_button_no_fill"
             android:layout_marginTop="24dp"
-            android:layout_marginLeft="30dp"
-            android:textColor="#FFFFFF"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/theme_purple"
             android:padding="12dp" />
 
         <!-- Display Predicted Salary -->

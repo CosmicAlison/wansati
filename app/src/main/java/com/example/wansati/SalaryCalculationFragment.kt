@@ -12,7 +12,6 @@ class SalaryCalculationFragment : Fragment() {
     private lateinit var jobTitleInput: EditText
     private lateinit var experienceInput: EditText
     private lateinit var educationSpinner: Spinner
-    private lateinit var skillsInput: EditText
     private lateinit var predictButton: Button
     private lateinit var predictedSalaryText: TextView
 
@@ -28,7 +27,6 @@ class SalaryCalculationFragment : Fragment() {
         jobTitleInput = view.findViewById(R.id.jobTitleInput)
         experienceInput = view.findViewById(R.id.experienceInput)
         educationSpinner = view.findViewById(R.id.educationSpinner)
-        skillsInput = view.findViewById(R.id.skillsInput)
         predictButton = view.findViewById(R.id.predictButton)
         predictedSalaryText = view.findViewById(R.id.predictedSalaryText)
 
@@ -60,7 +58,6 @@ class SalaryCalculationFragment : Fragment() {
         val jobTitle = jobTitleInput.text.toString()
         val experience = experienceInput.text.toString().toDoubleOrNull()
         val education = educationSpinner.selectedItem.toString()
-        val skills = skillsInput.text.toString()
 
         // Validate inputs
         if (jobTitle.isBlank()) {
@@ -72,12 +69,11 @@ class SalaryCalculationFragment : Fragment() {
             return
         }
 
-        // Simulate salary prediction logic
+        // Add API call to salary prediction service
         val predictedSalaryRange = simulateSalaryPrediction(
             jobTitle,
             experience,
-            education,
-            skills
+            education
         )
 
         // Display the result
@@ -85,17 +81,11 @@ class SalaryCalculationFragment : Fragment() {
         predictedSalaryText.visibility = View.VISIBLE
     }
 
-    /**
-     * Simulate the salary prediction logic.
-     * Replace this with a call to your actual algorithm or API.
-     */
     private fun simulateSalaryPrediction(
         jobTitle: String,
         experience: Double,
         education: String,
-        skills: String
     ): String {
-        // Example logic for prediction
         val baseSalary = when (education) {
             "High School" -> 30000
             "Associate's Degree" -> 40000
@@ -106,9 +96,7 @@ class SalaryCalculationFragment : Fragment() {
         }
 
         val experienceBonus = (experience * 2000).toInt()
-        val skillsBonus = if (skills.isNotBlank()) 5000 else 0
-
-        val lowerBound = baseSalary + experienceBonus + skillsBonus
+        val lowerBound = baseSalary + experienceBonus
         val upperBound = lowerBound + 10000
 
         return "$$lowerBound - $$upperBound"

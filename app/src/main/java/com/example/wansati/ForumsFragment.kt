@@ -28,7 +28,6 @@ class ForumsFragment : Fragment() {
         forumRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         forumRecyclerView.adapter = ForumAdapter(getForumPosts())
 
-        // Set up the Add Post button
         binding.addPostButton.setOnClickListener {
             // Handle new post creation
             createNewPost()
@@ -38,12 +37,11 @@ class ForumsFragment : Fragment() {
     }
 
     private fun getForumPosts(): List<String> {
-        // Fetch or create a list of forum posts (dummy data for now)
+        // Fetch or create a list of forum posts
         return listOf("Welcome to the forum!", "Tips for getting started", "Ask questions here", "Share your experiences")
     }
 
     private fun createNewPost() {
-        // Logic to create a new forum post (navigate to a new post fragment or show a dialog)
     }
 
     override fun onDestroyView() {

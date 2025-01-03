@@ -14,7 +14,6 @@ class OnboardingScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.onboarding_screen_0)
 
-        // Initialize views
         val logo: ImageView = findViewById(R.id.logo)
         val onboardingBackdrop: ImageView = findViewById(R.id.onboardingBackdrop)
         val onboardingImage: ImageView = findViewById(R.id.onboardingImage)
@@ -25,14 +24,12 @@ class OnboardingScreen : AppCompatActivity() {
 
         // Set up click listeners for the buttons
         nextButton.setOnClickListener {
-            // Navigate to the first onboarding screen
             val intent = Intent(this, OnboardingScreen1::class.java)
             startActivity(intent)
             finish()
         }
 
         skipButton.setOnClickListener {
-            // Navigate directly to the authentication activity
             val intent = Intent(this, AuthenticationActivity::class.java)
             startActivity(intent)
             finish()
